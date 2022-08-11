@@ -41,4 +41,8 @@
   #define Z_MIN_PROBE_PIN                   PC5   // Probe (Proximity switch) port
 #endif
 
+#if !defined(Z_MIN_PROBE_PIN) && defined(CRTOUCH)
+  #define Z_MIN_PROBE_PIN                   PB7   // The BLUE wire on the stock CRTouch connector
+#endif
+
 #include "pins_BTT_OCTOPUS_V1_common.h"
