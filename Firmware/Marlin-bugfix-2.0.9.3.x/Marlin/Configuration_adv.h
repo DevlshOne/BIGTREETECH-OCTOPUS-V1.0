@@ -580,7 +580,7 @@
 /**
  * Use one of the PWM fans as a redundant part-cooling fan
  */
-#define REDUNDANT_PART_COOLING_FAN 2  // Index of the fan to sync with assigned part cooling fan.
+//#define REDUNDANT_PART_COOLING_FAN 2  // Index of the fan to sync with assigned part cooling fan.
 
 // @section extruder
 
@@ -655,8 +655,8 @@
  * The multiplexer is automatically switched at tool-change.
  * Set FANMUX[012]_PINs below for up to 2, 4, or 8 multiplexed fans.
  */
-#define FANMUX0_PIN -1
-#define FANMUX1_PIN -1
+#define FANMUX0_PIN PA8 // -1
+#define FANMUX1_PIN PE5 // -1
 #define FANMUX2_PIN -1
 
 /**
@@ -3078,7 +3078,7 @@
    * Define your own with:
    * { <off_time[1..15]>, <hysteresis_end[-3..12]>, hysteresis_start[1..8] }
    */
-  #define CHOPPER_TIMING CHOPPER_DEFAULT_12V        // All axes (override below)
+  #define CHOPPER_TIMING CHOPPER_DEFAULT_24V        // All axes (override below)
   //#define CHOPPER_TIMING_X  CHOPPER_TIMING        // For X Axes (override below)
   //#define CHOPPER_TIMING_X2 CHOPPER_TIMING_X
   //#define CHOPPER_TIMING_Y  CHOPPER_TIMING        // For Y Axes (override below)
@@ -3113,7 +3113,7 @@
    * M912 - Clear stepper driver overtemperature pre-warn condition flag.
    * M122 - Report driver parameters (Requires TMC_DEBUG)
    */
-  //#define MONITOR_DRIVER_STATUS
+  #define MONITOR_DRIVER_STATUS
 
   #if ENABLED(MONITOR_DRIVER_STATUS)
     #define CURRENT_STEP_DOWN     50  // [mA]

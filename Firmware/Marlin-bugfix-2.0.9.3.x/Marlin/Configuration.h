@@ -1116,6 +1116,8 @@
 // See https://marlinfw.org/docs/configuration/probes.html
 //
 
+#define DIAG_JUMPERS_REMOVED
+
 /**
  * Enable this option for a probe connected to the Z-MIN pin.
  * The probe replaces the Z-MIN endstop and is used for Z homing.
