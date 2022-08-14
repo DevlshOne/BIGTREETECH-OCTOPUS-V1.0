@@ -98,6 +98,10 @@
 #define Z_STEP_PIN                          PB0
 #define Z_DIR_PIN                           PC5
 
+#define Z2_ENABLE_PIN                        PB1
+#define Z2_STEP_PIN                          PB0
+#define Z2_DIR_PIN                           PC5
+
 #define E0_ENABLE_PIN                       PD1
 #define E0_STEP_PIN                         PB3
 #define E0_DIR_PIN                          PB4
@@ -141,6 +145,8 @@
 #define FAN_PIN                             PC6   // "FAN0"
 #define FAN1_PIN                            PC7   // "FAN1"
 #define FAN2_PIN                            PB15  // "FAN2"
+
+#define DIAG_JUMPERS_REMOVED
 
 /**
  *              SKR Mini E3 V3.0
